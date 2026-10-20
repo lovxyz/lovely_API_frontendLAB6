@@ -200,7 +200,7 @@ function App() {
   };
 
   const handleDelete = async (id) => {
-    if (!window.confirm('Delete this product?')) return;
+    if (!window.confirm('I SURE WANNA DELETE THOSE PRODUCT')) return;
     try {
       await request(requestUrl(`/api/products/${id}`), { method: 'DELETE' });
       setMessage('Product deleted');
